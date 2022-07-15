@@ -18,9 +18,6 @@
 		<main>
 			<section class="container">
 				<h2>Meus pacientes</h2>
-				<label for="filtrar-tabela">Filtre:</label>
-				<input type="text" name="filtro" id="filtrar-tabela" placeholder="digite o nome do paciente">
-
 				<table>
 					<thead>
 						<tr>
@@ -34,7 +31,7 @@
 					<tbody id="tabela-pacientes">
 						<tr class="paciente" id="primeiro-paciente">
 							<td class="info-nome">Paulo</td>
-							<td class="info-peso">110</td>
+							<td class="info-peso">100</td>
 							<td class="info-altura">2.00</td>
 							<td class="info-gordura">10</td>
 							<td class="info-imc">0</td>
@@ -42,7 +39,7 @@
 
 						<tr class="paciente" >
 							<td class="info-nome">João</td>
-							<td class="info-peso">88</td>
+							<td class="info-peso">80</td>
 							<td class="info-altura">1.72</td>
 							<td class="info-gordura">40</td>
 							<td class="info-imc">0</td>
@@ -70,17 +67,17 @@
 							<td class="info-gordura">19</td>
 							<td class="info-imc">0</td>
 						</tr>
+
+					<script src="js/principal.js"></script>
+
+
 					</tbody>
 				</table>
-					<span id="erro-ajax" class="invisivel-filtro">Erro ao Buscar os Pacientes!</span>
-				  <button id="buscar-pacientes" class="botao bto-principal">Buscar Paciente</button>
 
 			</section>
 		</main>
 <section class="container">
     <h2 id="titulo-form">Adicionar novo paciente</h2>
-		<ul id="mensagens-erro">
-		</ul>
     <form id="form-adiciona">
         <div class="grupo">
             <label for="nome">Nome:</label>
@@ -88,7 +85,7 @@
         </div>
         <div class="grupo">
             <label for="peso">Peso:</label>
-            <input id="peso" name="peso" type="text" placeholder="digite o peso do seu paciente" class=" campo campo-medio">
+            <input id="peso" name="peso" type="text" placeholder="digite o peso do seu paciente" class="campo campo-medio">
         </div>
         <div class="grupo">
             <label for="altura">Altura:</label>
@@ -96,7 +93,7 @@
         </div>
         <div class="grupo">
             <label for="gordura">% de Gordura:</label>
-            <input id="gordura" type="text" placeholder="digite a porcentagem de gordura do seu paciente" class=" campo campo-medio">
+            <input id="gordura" type="text" placeholder="digite a porcentagem de gordura do seu paciente" class="campo campo-medio">
         </div>
 
         <button id="adicionar-paciente" class="botao bto-principal">Adicionar</button>
@@ -104,9 +101,4 @@
 </section>
 
 	</body>
-	<script src="js/calcula-imc.js"></script>
-	<script src="js/form.js"></script>
-	<script src="js/remover-paciente.js"></script>
-	<script src="js/filtre.js"></script>
-	<script src="js/buscar-paciente.js"></script>
 </html>
